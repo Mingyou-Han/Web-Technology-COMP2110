@@ -1,0 +1,48 @@
+/* style.css */
+
+html{
+    background-color: blueviolet;
+}
+
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+p{
+    color:rgb(255, 255, 255)
+}
+
+#actions {
+    background-color: rgb(6, 176, 255);
+    list-style: none; /* gets rid of the dots*/
+
+    margin: auto; /*centers button*/
+
+    padding: 0;
+
+    width: 205px;
+
+    display: grid;
+
+    padding: 0%;
+    grid-template-columns: 100px 100px;
+    gap: 5px; 
+}
+
+#action li{
+    background-color: crimson;
+    display: inline;
+
+}
+
+/* Style the buttons */
+
+#actions button{
+    background-color: darkgreen;
+    border-color: rgb(255, 251, 0);
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+}
+

@@ -1,0 +1,226 @@
+body {
+  border: 5px;
+  border-style: ridge;
+  background-color: #bd36a067;
+}
+
+.task-board {
+  background-color: bisque;
+  margin: 20px;
+
+  position: relative;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border: double;
+  border-radius: 8px;
+}
+
+.task-card {
+  margin: 10px;
+  border-style: outset;
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.task-card .task-priority {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+
+  background-color: #f44336;
+  ;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+.task-card:nth-child(n) {
+  transform: rotate(-6deg);
+}
+
+.task-card:nth-child(n+2) {
+  transform: rotate(-3deg);
+}
+
+.task-card:nth-child(n+3) {
+  transform: rotate(1deg);
+}
+
+.task-card:nth-child(n+4) {
+  transform: rotate(5deg);
+}
+
+.task-card:nth-child(n+5) {
+  transform: rotate(6deg);
+}
+
+.task-card:nth-child(n+6) {
+  transform: rotate(-3deg);
+}
+
+
+
+#task-manager h2 {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#widgets>div {
+  width: 300px;
+  border: 1px solid green;
+
+}
+
+
+header {
+  /* Gradiant Color Banner */
+
+  background: rgb(252, 70, 107);
+  background: linear-gradient(0deg, rgba(252, 70, 107, 0) 10%, rgba(207, 76, 142, 1) 40%, rgba(63, 94, 251, 1) 100%);
+  display: grid;
+  grid-template-rows: auto;
+  z-index: 2000;
+
+}
+
+header h2 {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+  grid-row: 1;
+
+  padding: 10px;
+
+}
+
+#task-manager {
+
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  background: rgb(252, 70, 107);
+  background: linear-gradient(180deg, rgba(252, 70, 107, 0) 0%, rgba(207, 76, 142, 1) 24%, rgba(63, 94, 251, 1) 100%);
+}
+
+h2 {
+  font-family: 'Lato';
+}
+
+nav {
+  grid-row: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  /* Remove default list styling */
+  margin: 0;
+
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  background-color: #4c00ff47;
+  color: rgb(215, 68, 158);
+}
+
+nav ul li#current a {
+  background-color: #04AA6D;
+  /* Different background for the current page */
+  color: white;
+}
+
+
+search {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#user {
+
+  top: 40px;
+  right: 10%;
+  font-size: 14px;
+  position: fixed;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#logout {
+
+  cursor: pointer;
+  padding: 4px 8px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: color-mix(in hsl shorter hue, color percentage, color percentage);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+a {
+  background-color: #ffffff;
+  border-radius: 4px 4px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid green;
+}
+
+
+#widgets #weather-widget {
+  background: rgb(55, 57, 59);
+  background: radial-gradient(circle, rgba(55, 57, 59, 1) 79%, rgba(98, 98, 98, 0.9071925754060325) 90%, rgba(255, 255, 255, 0.08120649651972156) 100%);
+}
+
+#widgets #weather-widget h3 {
+  background-color: #ff0000;
+}
+
+#widgets #task-stats-widget h3 {
+  /*first box*/
+  background-color: #ff0000;
+}
+
+#widgets #this-week-widget h3 {
+  background-color: #ff0000;
+}
+
+#widgets #task-timer-widget h3 {
+  background-color: #ff0000;
+}
